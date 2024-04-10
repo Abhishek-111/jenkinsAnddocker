@@ -4,6 +4,7 @@ COPY . .
 
 WORKDIR /src
 
+RUN dotnet restore
 
 RUN dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app
 
